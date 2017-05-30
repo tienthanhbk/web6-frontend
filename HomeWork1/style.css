@@ -1,6 +1,7 @@
 .menu {
   background-color: #D5B0AC;
   text-align: center;
+  position: absolute;
 }
 .menu span {
   color: #402E2A;
@@ -8,8 +9,8 @@
   display: inline-block;
   width: 100px;
   height: 30px;
-  padding: 10px 0 0 0;
-  /*padding: 10px 0 0px 0;*/
+  /*padding: 10px 0 0 0;*/
+  line-height: 30px;
 }
 
 .menu span:hover {
@@ -21,10 +22,16 @@
 
 .menu_vertical {
   background-color: #FFFFFF;
+  position: absolute;
+  display: none;
 }
 
 .menu_vertical span{
   background-color: #D5B0AC;
   display: block;
   margin: 1px 0 1px 0;
+}
+
+.menu span:hover .menu_vertical {
+  display: block;
 }
